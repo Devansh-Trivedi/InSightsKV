@@ -46,6 +46,7 @@ https://templatemo.com/tm-506-tinker
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <link rel="stylesheet" href="css/intlTelInput.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
         <script src="js/intlTelInput.min.js"></script>
         <script src="https://code.jquery.com/jquery-latest.min.js"></script>
         <script src="js/intlTelInput-jquery.min.js"></script>
@@ -79,10 +80,12 @@ https://templatemo.com/tm-506-tinker
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="#" class="scroll-top">Home</a></li>
-                        <li><a href="#" class="scroll-link" data-id="about1">about1 Us</a></li>
-                        <li><a href="#" class="scroll-link" data-id="portfolio">Portfolio</a></li>
+                        <li><a href="#" class="scroll-link" data-id="about">About Us</a></li>
+                        <li><a href="#" class="scroll-link" data-id="services-top">Services</a></li>
+                        <li><a href="#" class="scroll-link" data-id="portfolio">Gallery</a></li>
+                        <li><a href="#" class="scroll-link" data-id="testimonial">Testimonials</a></li>
                         <li><a href="#" class="scroll-link" data-id="blog">Blog</a></li>
-                        <li><a href="#" class="scroll-link" data-id="contact-us">Contact Us</a></li>
+                        <li><a href="#" class="scroll-link" data-id="contact">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>
@@ -108,13 +111,13 @@ https://templatemo.com/tm-506-tinker
         
     <div class="max-width">
         <!-- <img src="img/bottom.png" class="center" > -->
-        <h2 class="title" style="padding-top:300px ;">About Us</h2>
+        <h2   class="aboutUs-title">About Us</h2>
         <div class="about-content">
             <!-- <div class="column left">
                 <img class="profileimg" src="images/ProfileImg.jpeg" alt="">
             </div> -->
             <div class="column right center" >
-                <div class="text" style="font-size: 30px;">Allow us make your work easier  </div> <div class="text">We provide services like <span class="typing-2" style="    font-family: 'Merriweather', serif;"></span></div>
+                <div  class="about-tag">Allow us make your work easier  </div> <div class="text">We provide services like <span class="typing-2" style="    font-family: 'Merriweather', serif;"></span></div>
                 <div> <p class="para-about" style="font-family: 'Merriweather', serif;" >InsightSKV is a market research company and has immense experience in specializing of data collection. We are a market research firm headquartered in North East London and our corporate office is located in Mumbai, India. 
                     InsightSKV has the right skill sets of handling market research projects for a wide range of clients which consists of Universities, Scientists, High tech Companies, Retail Corporations, Insurance companies, Automobiles, Healthcare, 
                     consumer products, Banking & finance, medicine testing and many more. We carry out both qualitative and quantitative market research for you.</p></div><br><br><br><br>
@@ -124,7 +127,7 @@ https://templatemo.com/tm-506-tinker
             </div>
         </div>
     </div>
-    <h1 class="services-head" >Our Services</h1>
+    <h1 class="services-head" id="services-top" >Our Services</h1>
 </section>
 <section class="c-section services">
     <h2 class="c-section__title"><span>Our Services</span></h2>
@@ -388,7 +391,7 @@ https://templatemo.com/tm-506-tinker
         </div>
     </div>
 
-    <div id="contact-us">
+    <!-- <div id="contact-us">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -448,8 +451,57 @@ https://templatemo.com/tm-506-tinker
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+<!-- Responsive Contact Page with Dark Mode and Form Validation (vanilla JS).
 
+*Designed & built for desktop and tablets with viewport width >= 720px and in landscape orientation.  -->
+
+<section id="contact" class="center">
+  <h1 class="aboutUs-title center">Contact Us</h1>
+    <div class="container">
+    
+        <div class="row">
+            <div class="col-md-12">
+              <fieldset>
+                <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+              </fieldset>
+            </div>
+        
+            <div class="col-md-12">
+                <fieldset>
+                    <input type="tel" id="phone" placeholder="Phone Number"> 
+                </fieldset>
+            </div>
+            
+                
+           
+            <div class="col-md-12">
+              <fieldset>
+                <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
+              </fieldset>
+            </div>
+            <div class="col-md-12">
+                <fieldset>
+                  <input name="subject" type="text" class="form-control" id="name" placeholder="Subject" required="">
+                </fieldset>
+              </div>
+            <div class="col-md-12">
+              <fieldset>
+                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+              </fieldset>
+            </div>
+            <div class="col-md-12">
+              <fieldset>
+                <button type="submit" id="form-submit" class="btn">Send Message</button>
+              </fieldset>
+            </div>
+        </div>
+      
+    </form>
+     
+      </div>
+      </section>
+  <!-- Image credit: Oliver Sjöström https://www.pexels.com/photo/body-of-water-near-green-mountain-931018/  -->
     <div id="map" class="col-sm-6 ">
     	<!-- How to change your own map point
             1. Go to Google Maps
@@ -479,9 +531,10 @@ https://templatemo.com/tm-506-tinker
                 <div class="col-md-4 col-sm-12">
                     <div class="location">
                         <h4>Location</h4>
-                        <ul>
-                            <li>46 Raffles Ave, <br>Singapore 039803</li>
-                            <li>12 Republic Blvd, <br>Singapore 038975</li>
+                        <ul><p>India</p> 
+                            <li>Ijmima <br>Malad, Mindspace, Malad West, <br> Mumbai, Maharashtra 400064</li><hr>
+                            <p>London</p>
+                            <li>Icon Offices<br>321, 323 High Rd, Chadwell Heath,<br> Dagenham, Romford RM6 6AX, United Kingdom</li>
                         </ul>
                     </div>
                 </div>
@@ -588,6 +641,7 @@ https://templatemo.com/tm-506-tinker
         };
     }
     </script>
-    
+     
+
 </body>
 </html>
